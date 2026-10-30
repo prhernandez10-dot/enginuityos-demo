@@ -1,19 +1,20 @@
 # EnginuityOS live demo
 
-**ERP manages transactions. EnginuityOS governs the decisions.**
+Live at https://prhernandez10-dot.github.io/enginuityos-demo/
 
-EnginuityOS is an operating platform for the aviation aftermarket. It records every decision in buying, repairing and selling aircraft parts and engines, makes sure the right person makes each one, and keeps a record nobody can quietly change. AI can advise, but people decide.
+`index.html` is the whole demo in one file. Open it in any browser; it needs no server, no account and no database.
 
-This repository holds a self-contained, interactive demo of it: one HTML file with no server, no account and no database.
+## What is in it
 
-## What you can try
+The demo walks the aviation aftermarket value stream end to end, for two kinds of asset:
 
-- **Repair a broken part, then sell it.** This runs the platform's real material code in your browser. Watch it refuse an AI approval, an approval above someone's limit, and a sale before quality inspection.
-- **Approve an $8M engine purchase.** A recorded run of the governed deal workflow, from sales lead to a locked record.
-- **Tamper test.** Change a stored record and watch the tamper-evident hash chain catch it.
+| Section | What it does |
+|---|---|
+| The value stream | The ten stages (demand, sourcing, procurement, receiving and quality, inventory, repair, sales, fulfilment, finance, execution) with every step of the three walkthroughs placed on them, and where the ERP is observed |
+| Parts: demand to cash (32 steps, live) | Runs the real material and lot ledgers in the browser: a customer demand, a package of unserviceable parts, a purchase order with approval limits, receipt and quality hold, repair with alert tasks, quality acceptance, reservation and sale, supplying an MRO work order from a lot of consumables, the recovery review and the exposure view |
+| Engine: lead to locked record (15 steps, recorded run) | Replays a run of the real governed deal workflow: evidence verified by a second person, compliance, two approvers, award, custody, settlement, title, the executed outcome with per-asset amounts (allocated or unallocated, never split automatically), plan vs. actual, record lock, audit export and replay |
+| Daily ERP Data Center (17 steps, live) | Runs the real Data Center package: declare a synthetic source, map its export with second-person approval, upload, catch a mislabeled file, a duplicate and a key conflict, reconcile day 2 against day 1, publish atomically, check freshness and rebuild the import history |
+| Tamper test | Change any stored record and watch the real hash-chain check catch it |
+| How this demo works | What is real, what differs from a server, what is not shown |
 
-All data is synthetic. Every company, person, part and number in the demo is invented.
-
-## Run it locally
-
-Download `index.html` and open it in any modern browser.
+All data is synthetic: placeholder ids (`PN-SYN-*`, `SYN-TRADER-01`), "Demo … (fictional)" party names, the platform's synthetic test policy and its seeded synthetic ERP generator.
