@@ -8,30 +8,31 @@
 <meta name="description" content="Try EnginuityOS, the operating platform for the aviation aftermarket. The real engine runs in your browser on synthetic data, across the whole value stream.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@500;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 rx=%2236%22 fill=%22%23FFFFFF%22/%3E%3Cpath d=%22M34 156 C 44 70, 140 50, 160 112%22 stroke=%22%2312325A%22 stroke-width=%2230%22 stroke-linecap=%22round%22 fill=%22none%22/%3E%3Ccircle cx=%22164%22 cy=%22146%22 r=%2227%22 fill=%22%232D9EA6%22/%3E%3C/svg%3E">
 <style>
 /* Layout: the operator console's frame (navy rail + working surface), carrying a guided walkthrough beside live records. */
 :root{
-  --navy:#0b2341; --rail:#0b2341; --rail-ink:#e8eef5; --rail-muted:#9fb2c8; --rail-on:#1d4776; --rail-rule:#1b3a5f;
-  --bg:#f3f5f8; --surface:#ffffff; --ink:#15202c; --muted:#56606e; --line:#e0e4ea; --line-strong:#c5cbd1;
-  --brand:#0067b4; --brand-ink:#ffffff; --brand-soft:#e6f0f8; --sky:#48a5e0;
+  --navy:#12325A; --rail:#12325A; --rail-ink:#F2F6F8; --rail-muted:#B9CCE2; --rail-on:#1C3E68; --rail-rule:#2A4C78;
+  --bg:#F7F9FA; --surface:#FFFFFF; --ink:#16202C; --muted:#56677A; --line:#D9E2E8; --line-strong:#C3CED7;
+  --brand:#2E7788; --brand-ink:#FFFFFF; --brand-soft:#EAF6F6; --sky:#63C7C5;
   --ok:#0a7d33; --ok-soft:#e3f3e8; --warn:#9a5909; --warn-soft:#fbf0de; --bad:#b3261e; --bad-soft:#fbe7e5; --ai:#6a4fb3; --ai-soft:#efeafa;
   --stripe:#fff6db; --stripe-ink:#5b4300;
-  --font:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
-  --display:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif;
+  --font:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --display:Montserrat,system-ui,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
   --r:8px; --r-sm:5px;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --rail:#071629; --rail-on:#163a63; --rail-rule:#16304d;
-  --bg:#0e131a; --surface:#151c26; --ink:#e6edf3; --muted:#9aa4b2; --line:#29323f; --line-strong:#3a4554;
-  --brand:#5bb0e8; --brand-ink:#07162b; --brand-soft:#132c44; --sky:#8dd8f8;
+  --rail:#0B1F38; --rail-on:#1C3E68; --rail-rule:#24405F;
+  --bg:#07152A; --surface:#0F2440; --ink:#E6EEF4; --muted:#A6B6C6; --line:#24405F; --line-strong:#34557A;
+  --brand:#63C7C5; --brand-ink:#07152A; --brand-soft:#11343F; --sky:#A3DEDC;
   --ok:#4fc97f; --ok-soft:#12291c; --warn:#e3a63b; --warn-soft:#2c2213; --bad:#ff8a80; --bad-soft:#331a19; --ai:#b9a6f0; --ai-soft:#221d35;
   --stripe:#2b2410; --stripe-ink:#f1d68a; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --rail:#071629; --rail-on:#163a63; --rail-rule:#16304d;
-  --bg:#0e131a; --surface:#151c26; --ink:#e6edf3; --muted:#9aa4b2; --line:#29323f; --line-strong:#3a4554;
-  --brand:#5bb0e8; --brand-ink:#07162b; --brand-soft:#132c44; --sky:#8dd8f8;
+  --rail:#0B1F38; --rail-on:#1C3E68; --rail-rule:#24405F;
+  --bg:#07152A; --surface:#0F2440; --ink:#E6EEF4; --muted:#A6B6C6; --line:#24405F; --line-strong:#34557A;
+  --brand:#63C7C5; --brand-ink:#07152A; --brand-soft:#11343F; --sky:#A3DEDC;
   --ok:#4fc97f; --ok-soft:#12291c; --warn:#e3a63b; --warn-soft:#2c2213; --bad:#ff8a80; --bad-soft:#331a19; --ai:#b9a6f0; --ai-soft:#221d35;
   --stripe:#2b2410; --stripe-ink:#f1d68a; color-scheme:dark}
 
